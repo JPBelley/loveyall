@@ -1,0 +1,68 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+canvas {
+  max-height: 100vh;
+}
+.text {
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  font-weight: 800;
+  font-size: 10vw;
+  letter-spacing: 10px;
+  color: transparent;
+  text-transform: uppercase;
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  animation: dash 3s infinite cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.intro {
+  width: 200vw;
+  height: 200vw;
+  background-color: #000;
+  position: absolute;
+  top: 50%;
+  animation: circleDown 3s forwards cubic-bezier(0.77, 0, 0.175, 1);
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
+text {
+  font-size: 10vw;
+}
+
+svg {
+  width: 100vw;
+  height: 200px;
+}
+
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 500;
+  }
+  50% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: -500;
+  }
+}
+
+@keyframes circleDown {
+  to {
+    width: 0;
+    height: 0;
+  }
+}

@@ -4,69 +4,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+
+  <title>Have Fun</title>
+
+  <meta property="og:title" content="Have Fun" />
+  <meta property="og:DESCRIPTION" content="CAREFUL OF HEADACHES" />
+  <meta property="og:image" content="https://jpbelley.github.io/loveyall/img/ogimg.png" />
+
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap" rel="stylesheet">
-  <style>
-    html,
-    body {
-      margin: 0;
-      padding: 0;
-      width: 100vw;
-      height: 100vh;
-      overflow: hidden;
-    }
-    canvas {
-      max-height: 100vh;
-    }
-    .text {
-      font-family: 'Open Sans', Helvetica, sans-serif;
-      position: absolute;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100vw;
-      height: 100vh;
-      top: 0;
-      font-weight: 800;
-      font-size: 10vw;
-      letter-spacing: 10px;
-      color: transparent;
-      text-transform: uppercase;
-      /* -webkit-text-stroke: 4px #fff; */
-      stroke-dasharray: 500;
-      stroke-dashoffset: 500;
-      animation: dash 3s infinite cubic-bezier(0.645, 0.045, 0.355, 1);
-    }
-
-    text {
-      font-size: 10vw;
-    }
-
-    svg {
-      width: 65vw;
-      height: 200px;
-    }
-    @keyframes dash {
-      0% {
-        stroke-dashoffset: 500;
-      }
-      50% {
-        stroke-dashoffset: 0;
-      }
-      100% {
-        stroke-dashoffset: -500;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <div id="container"></div>
     <div class="text">
-      <!-- Fuck y'all -->
+    <!-- Fuck y'all -->
       <svg stroke="#fff" stroke-width="3" class="text-line">
-        <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle"
-          fill="none" >Love y'all</text>
+        <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="none" >Love y'all</text>
       </svg>
+      <!-- <div class="intro"></div> -->
+    </div>
+
     <script src="js/three.min.js"></script>
     <script id="vertexShader" type="x-shader/x-vertex">
             void main() {
